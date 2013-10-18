@@ -1,0 +1,10 @@
+# site configuration
+
+exclude: [_less, _coffee]
+permalink: pretty
+pygments: true
+
+github: hdiresearch/hdiresearch.github.io
+analytics_id: UA-XXXXXXX
+
+author: Richard Mortier
