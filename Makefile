@@ -17,23 +17,31 @@
 
 .PHONY: site clean css js test
 
-RECESS = recess --compile
+LESS = recess --compile \
+	--noOverqualifying false \
+	--strictPropertyOrder false \
+	--noUniversalSelectors false
+LESS = lessc -x --clean-css
+
 COFFEE = coffee
 JEKYLL = jekyll --trace
 
 COFFEES = $(notdir $(wildcard _coffee/*.coffee))
 JSS = $(patsubst %.coffee,js/%.js,$(COFFEES))
 
-site: css js papers/papers.json
+LESSS = $(wildcard _less/*.less)
+CSSS = $(patsubst _less/%.less,css/%.css,$(LESSS))
+
+site: css js
 	$(JEKYLL) build
 
 clean:
-	$(RM) -r _site css/screen.css
-	$(RM) $(JSS) $(wildcard _coffee/*.js)
+	$(RM) -r _site
+	$(RM) $(JSS) $(wildcard _coffee/*.js) $(CSSS)
 
-css: css/screen.css
+css: $(CSSS)
 css/%.css: _less/%.less
-	$(RECESS) $< >| $@
+	$(LESS) $< >| $@
 
 js: $(JSS)
 js/%.js: _coffee/%.coffee
