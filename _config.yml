@@ -1,6 +1,6 @@
 # site configuration
 
-exclude: [_less, _coffee, Gemfile, Gemfile.lock, README.md, LICENSE]
+exclude: [Gemfile, Gemfile.lock, README.md, LICENSE]
 permalink: pretty
 pygments: true
 
