@@ -1,4 +1,4 @@
 hdiresearch.github.io
 =====================
 
-website
+website for <hdiresearch.org>
