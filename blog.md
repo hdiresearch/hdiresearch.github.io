@@ -1,6 +1,7 @@
 ---
 layout: page
-parent: blog
+section: blog
+parent: home
 description: The HDI Blog
 title: Human-Data Interaction Blog
 ---

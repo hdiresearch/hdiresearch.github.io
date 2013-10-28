@@ -4,7 +4,7 @@ section: join-us
 tagline: "Introducing HDI"
 ---
 
-Setting a research agenda
+Welcome!
 
 We're a group of independent researchers who came together because of a shared interest in _Human-Data Interaction_ or HDI. Stemming from a discussion between [Richard Mortier][mort] and [Hamed Haddadi][hamed], the essence of HDI is to ...
 
