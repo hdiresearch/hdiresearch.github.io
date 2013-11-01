@@ -1,0 +1,32 @@
+---
+layout: nil
+---
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>hdiresearch.org</title>
+  <link href="http://hdiresearch.org/"/>
+  <link type="application/atom+xml" rel="self"
+        href="http://hdiresearch.org/blog/atom.xml"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>http://hdiresearch.org/</id>
+  <author>
+    <name>HDIResearch</name>
+    <email>webmaster@hdiresearch.org</email>
+  </author>
+
+  {% for post in site.posts %}
+  <entry>
+    <id>http://hdiresearch.org{{ post.id }}</id>
+    <link type="text/html" rel="alternate" href="http://hdiresearch.org{{ post.url }}"/>
+    <title>{{ post.title | xml_escape }}</title>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <author>
+      <name>HDIResearch</name>
+      <uri>http://hdiresearch.org/</uri>
+    </author>
+    <content type="html">{{ post.content | xml_escape }}</content>
+  </entry>
+  {% endfor %}
+
+</feed>
