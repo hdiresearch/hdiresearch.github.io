@@ -16,10 +16,17 @@ description: Introducing the Human-Data Interaction Community
     </a>
   </div>
   <div class="col-sm-3">
-    <a href="http://www.eecs.qmul.ac.uk/~hamed/public/Hamed.html" 
+    <a href="http://www.eecs.qmul.ac.uk/~hamed/public/Hamed.html"
        class="thumbnail">
       <img src="/img/hamed.jpg" alt="Hamed Haddadi">
       Dr Hamed Haddadi
+    </a>
+  </div>
+  <div class="col-sm-3">
+    <a href="http://tristan.host.cs.st-andrews.ac.uk/" class="thumbnail">
+      <img src="http://tristan.host.cs.st-andrews.ac.uk/assets/img/photo.jpg"
+           alt="Tristan Henderson">
+      Dr Tristan Henderson
     </a>
   </div>
 </div>
