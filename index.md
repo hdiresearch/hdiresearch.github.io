@@ -15,13 +15,14 @@ title: Human-Data Interaction
 +--  {.row}
 +--   {.col-sm-4}
 
-Human-Data Interaction (HDI) is a research agenda concerned with the increasingly pervasive data collection and analysis of our everyday lives.
+
+Human-Data Interaction (HDI) is concerned with the increasingly pervasive data collection our lives are subject to, and the way this is opaque to most people.
 
 =--
 
 +--   {.col-sm-4}
 
-Data, collected about and by us, is analysed and inferences about our personalities and behaviour are drawn from the results and acted upon.
+This data, collected about and by us, is analysed and inferences about our personalities and behaviour are drawn from the results and acted upon.
 
 =--
 
