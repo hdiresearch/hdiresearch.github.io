@@ -5,9 +5,6 @@
     <li>
       <small class="text-muted">{{ post.date | date_to_string }}</small>
       <a href="{{ post.url }}">{{ post.title }}</a>
-      <small><em>
-        {{ post.excerpt }}
-      </em></small>
     </li>
   {% endfor %}
 </ul>
