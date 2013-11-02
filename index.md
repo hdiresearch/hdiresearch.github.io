@@ -22,13 +22,13 @@ Human-Data Interaction (HDI) is concerned with the increasingly pervasive data c
 
 +--   {.col-sm-4}
 
-This data, collected about and by us, is analysed and inferences about our personalities and behaviour are drawn from the results and acted upon.
+These data, collected about and by us, are analysed and inferences about our personalities and behaviour are drawn from the results and acted upon.
 
 =--
 
 +--   {.col-sm-4}
 
-We propose placing the human at the centre of these data flows, and providing mechanisms for citizens to interact with these systems explicitly. 
+We propose placing the human at the centre of these data flows, and providing mechanisms for citizens to interact with these systems explicitly.
 
 =--
 =--
