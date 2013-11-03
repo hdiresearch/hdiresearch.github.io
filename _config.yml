@@ -4,7 +4,9 @@ exclude: [Gemfile, Gemfile.lock, README.md, LICENSE]
 permalink: pretty
 pygments: true
 
-github: hdiresearch/hdiresearch.github.io
-analytics_id: UA-XXXXXXX
-
 author: Richard Mortier
+settings:
+  github: hdiresearch/hdiresearch.github.io
+  analytics:
+    id: UA-45397197-1
+    name: hdiresearch.org
