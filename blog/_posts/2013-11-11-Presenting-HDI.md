@@ -2,7 +2,7 @@
 title: Presenting HDI
 layout: post
 section: blog
-author: Richard Mortier
+author: Richard Mortier <mort@cantab.net>
 ---
 
 First public outing for HDI garners a best paper award!

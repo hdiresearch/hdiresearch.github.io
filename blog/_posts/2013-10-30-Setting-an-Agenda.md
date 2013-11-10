@@ -2,6 +2,7 @@
 title: Setting an Agenda
 layout: post
 section: blog
+author: Richard Mortier <mort@cantab.net>
 ---
 
 Welcome!
