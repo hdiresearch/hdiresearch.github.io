@@ -1,5 +1,5 @@
 ---
-title: Setting a Research Agenda
+title: Setting an Agenda
 layout: post
 section: blog
 ---
