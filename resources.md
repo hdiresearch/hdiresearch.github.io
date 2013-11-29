@@ -10,6 +10,8 @@ description: Collected HDI Resources
 
 A curated collection of HDI resources and links.
 
+The [HDI mailing list](http://jiscmail.ac.uk/HDI): open to all, for discussion, announcements and information pertaining to human-data interaction.
+
 [pdf](http://www.cs.nott.ac.uk/~rmm/papers/pdf/de13-hdi.pdf)
 __Challenges & Opportunities in Human-Data Interaction__<br />
 _R. Mortier, H. Haddadi, T. Henderson, D. McAuley, J. Crowcroft_<br />
