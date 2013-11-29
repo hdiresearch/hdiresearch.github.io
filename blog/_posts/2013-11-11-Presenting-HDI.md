@@ -31,25 +31,28 @@ and a good chance to meet up with like-minded folk.
       drinks at the very fine technical demonstrator session (disclaimer: I
       organised it :)
     </p>
-    <p>
-      On the Tuesday evening I was even more pleased to discover that we'd been
-      awarded one of the best paper awards (the others were the best student
-      paper, &ldquo;<a
-      href="http://de2013.org/wp-content/uploads/2013/09/de2013_submission_51.pdf">Designing
-      e-Voting for Participation: methodology</a>&rdquo; and one other best
-      paper, &ldquo;<a
-      href="http://de2013.org/wp-content/uploads/2013/09/de2013_submission_28.pdf">CURIOS:
-      Connecting Community Heritage through Linked Data</a>&rdquo;.
-    </p>
-    <p>
-      As the presenter, I (of course) claimed the prize associated with the
-      award: a shiny new Nexus 7 mini-tablet -- very nice! First impressions
-      after being an iPad user for a few months is that it's a useful form
-      factor, Android has improved significantly since the (rather old) version
-      on my Samsung Galaxy SII phone, and I probably prefer it to iOS even
-      though I've not yet upgraded to iOS7. (Read that as you will :)
-    </p>
   </div>
+
+  <p>
+    On the Tuesday evening I was even more pleased to discover that we'd been
+    awarded one of the best paper awards (the others were the best student
+    paper, &ldquo;<a
+    href="http://de2013.org/wp-content/uploads/2013/09/de2013_submission_51.pdf">Designing
+    e-Voting for Participation: methodology</a>&rdquo; and one other best
+    paper, &ldquo;<a
+    href="http://de2013.org/wp-content/uploads/2013/09/de2013_submission_28.pdf">CURIOS:
+    Connecting Community Heritage through Linked Data</a>&rdquo;.
+  </p>
+  <p>
+    As the presenter, I (of course) claimed the prize associated with the
+    award: a shiny new Nexus 7 mini-tablet -- very nice! First impressions
+    after being an iPad user for a few months is that it's a useful form
+    factor, Android has improved significantly since the (rather old) version
+    on my Samsung Galaxy SII phone, and I probably prefer it to iOS even
+    though I've not yet upgraded to iOS7. (Read that as you will :)
+  </p>
+
+
 </div>
 
 [mort]: http://www.cs.nott.ac.uk/~rmm/
