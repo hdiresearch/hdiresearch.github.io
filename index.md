@@ -14,48 +14,31 @@ title: Human-Data Interaction
 +-- {.container}
 +--  {.row}
 +--   {.col-sm-4}
-
-
 Human-Data Interaction (HDI) is concerned with the increasingly pervasive data collection our lives are subject to, and the way this is opaque to most people.
-
 =--
 
 +--   {.col-sm-4}
-
 These data, collected about and by us, are analysed and inferences about our personalities and behaviour are drawn from the results and acted upon.
-
 =--
 
 +--   {.col-sm-4}
-
 We propose placing the human at the centre of these data flows, and providing mechanisms for citizens to interact with these systems explicitly.
-
 =--
 =--
 
 +--  {.row}
 +--   {.col-sm-4 .text-center}
-
 ### [People](/people/)
-
 =--
 
 +--   {.col-sm-4 .text-center}
-
-### [Blog](/blog/)
-
-=--
-
-+--   {.col-sm-4 .text-center}
-
 ### [Resources](/resources/)
-
-=--
 =--
 
-+--  {.row}
-+--   {.col-sm-12 .text-center}
-
++--   {.col-sm-4}
++--    {.text-center}
+### [Blog](/blog/)
+=--
 <ul class="list-unstyled">
   {% for post in site.posts limit: 5 %}
     <li>
@@ -67,7 +50,6 @@ We propose placing the human at the centre of these data flows, and providing me
     </li>
   {% endfor %}
 </ul>
-
 =--
 =--
 
