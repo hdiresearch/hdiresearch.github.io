@@ -27,20 +27,12 @@ We propose placing the human at the centre of these data flows, and providing me
 =--
 
 +--  {.row}
-+--   {.col-sm-4 .text-center}
-### [People](/people/)
-=--
-
-+--   {.col-sm-4 .text-center}
-### [Resources](/resources/)
-=--
-
 +--   {.col-sm-4}
 +--    {.text-center}
 ### [Blog](/blog/)
 =--
 <ul class="list-unstyled">
-  {% for post in site.posts limit: 5 %}
+  {% for post in site.posts limit: 3 %}
     <li>
       <small class="text-muted">{{ post.date | date_to_long_string }}</small>
       <a href="{{ post.url }}">{{ post.title }}</a>
@@ -51,6 +43,42 @@ We propose placing the human at the centre of these data flows, and providing me
   {% endfor %}
 </ul>
 =--
+
++--   {.col-sm-4}
++--    {.text-center}
+### [People](/people/)
+<hr />
+=--
+<ul class="list-unstyled">
+  {% for post in site.posts limit: 2 offset: 3 %}
+    <li>
+      <small class="text-muted">{{ post.date | date_to_long_string }}</small>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <small class="text-muted"><em>
+        {{ post.excerpt }}
+      </em></small>
+    </li>
+  {% endfor %}
+</ul>
 =--
 
++--   {.col-sm-4}
++--    {.text-center}
+### [Resources](/resources/)
+<hr />
+=--
+<ul class="list-unstyled">
+  {% for post in site.posts limit: 2 offset: 5 %}
+    <li>
+      <small class="text-muted">{{ post.date | date_to_long_string }}</small>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <small class="text-muted"><em>
+        {{ post.excerpt }}
+      </em></small>
+    </li>
+  {% endfor %}
+</ul>
+=--
+
+=--
 =--
