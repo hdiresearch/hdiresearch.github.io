@@ -4,7 +4,7 @@ layout: nil
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title>hdiresearch.org</title>
+  <title>Human-Data Interaction</title>
   <link href="http://hdiresearch.org/"/>
   <link type="application/atom+xml" rel="self"
         href="http://hdiresearch.org/blog/atom.xml"/>
