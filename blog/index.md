@@ -6,7 +6,7 @@ description: The HDI Blog
 title: Human-Data Interaction Blog
 ---
 
-+--  {.col-lg-12}
+<div class="col-lg-12">
 
 <ul class="list-unstyled">
   {% for post in site.posts limit: 5 %}
@@ -18,4 +18,4 @@ title: Human-Data Interaction Blog
   {% endfor %}
 </ul>
 
-=--
+</div>
