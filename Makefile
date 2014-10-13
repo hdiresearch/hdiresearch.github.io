@@ -24,7 +24,7 @@ LESS = recess --compile \
 LESS = lessc -x --clean-css
 
 COFFEE = coffee
-JEKYLL = jekyll --trace
+JEKYLL = jekyll
 
 COFFEES = $(notdir $(wildcard _coffee/*.coffee))
 JSS = $(patsubst %.coffee,js/%.js,$(COFFEES))
@@ -33,7 +33,7 @@ LESSS = $(wildcard _less/*.less)
 CSSS = $(patsubst _less/%.less,css/%.css,$(LESSS))
 
 site: css js
-	$(JEKYLL) build
+	$(JEKYLL) build --trace
 
 clean:
 	$(RM) -r _site
@@ -48,4 +48,4 @@ js/%.js: _coffee/%.coffee
 	$(COFFEE) -c -o js $<
 
 test: css js
-	$(JEKYLL) serve --watch
+	$(JEKYLL) serve --watch --trace

@@ -2,7 +2,7 @@
 
 exclude: [Gemfile, Gemfile.lock, README.md, LICENSE]
 permalink: pretty
-pygments: true
+markdown: kramdown
 
 author: Richard Mortier
 settings:
