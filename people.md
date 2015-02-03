@@ -9,7 +9,7 @@ description: Introducing the Human-Data Interaction Community
 # Who Are We?
 
 <div class="col-sm-3">
-  <a href="http://www.cs.nott.ac.uk/~rmm/" class="thumbnail">
+  <a href="http://mort.io/" class="thumbnail">
     <img src="/img/mort.jpg" alt="Richard Mortier" />
     Dr Richard Mortier
   </a>
@@ -65,5 +65,13 @@ description: Introducing the Human-Data Interaction Community
      class="thumbnail">
     <img src="/img/nora.jpg" alt="Nora Ní Loideaín" />
     Nora Ní Loideaín
+  </a>
+</div>
+
+<div class="col-sm-3">
+  <a href="https://amraii.wordpress.com/"
+     class="thumbnail">
+    <img src="/img/nora.jpg" alt="Saman Amirpour Amraii" />
+    Saman Amirpour Amraii
   </a>
 </div>
