@@ -71,7 +71,7 @@ description: Introducing the Human-Data Interaction Community
 <div class="col-sm-3">
   <a href="https://amraii.wordpress.com/"
      class="thumbnail">
-    <img src="/img/nora.jpg" alt="Saman Amirpour Amraii" />
+    <img src="/img/saman.jpg" alt="Saman Amirpour Amraii" />
     Saman Amirpour Amraii
   </a>
 </div>
