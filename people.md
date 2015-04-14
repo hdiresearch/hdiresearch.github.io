@@ -75,3 +75,12 @@ description: Introducing the Human-Data Interaction Community
     Saman Amirpour Amraii
   </a>
 </div>
+
+<div class="col-sm-3">
+  <a href="http://anil.recoil.org"
+     class="thumbnail">
+    <img src="/img/avsm.jpg" alt="Anil Madhavapeddy" />
+    Anil Madhavapeddy
+  </a>
+
+</div>
