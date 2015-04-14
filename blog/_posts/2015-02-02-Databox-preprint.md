@@ -5,7 +5,7 @@ section: blog
 author: Anil Madhavapeddy <anil@recoil.org>
 ---
 
-We have crystalling the [HDI manifesto](http://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-837.html) into a
+We have crystalling the [HDI manifesto](http://ssrn.com/abstract=2508051) into a
 concrete system that takes a user-centric approach to handling personal
 data, described in our preprint paper *"[Personal Data: Thinking Inside the Box](http://arxiv.org/pdf/1501.04737v1.pdf)"* that is now available online.
 
