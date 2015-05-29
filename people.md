@@ -16,7 +16,7 @@ description: Introducing the Human-Data Interaction Community
 </div>
 
 <div class="col-sm-3">
-  <a href="http://www.eecs.qmul.ac.uk/~hamed/public/Hamed.html"
+  <a href="http://www.eecs.qmul.ac.uk/~hamed/"
      class="thumbnail">
     <img src="/img/hamed.jpg" alt="Hamed Haddadi" />
     Dr Hamed Haddadi
