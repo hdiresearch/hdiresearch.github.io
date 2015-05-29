@@ -12,6 +12,28 @@ title: Human-Data Interaction
 </div>
 
 <div class="container" markdown="1">
+
+<div class="row" markdown="1">
+
+<div class="col-sm-2 col-sm-offset-3" markdown="1">
+<div class="text-center" markdown="1">
+
+### [People](/people/)
+<hr />
+
+</div>
+</div>
+
+<div class="col-sm-2 col-sm-offset-2" markdown="1">
+<div class="text-center" markdown="1">
+
+### [Resources](/resources/)
+<hr />
+
+</div>
+</div>
+</div><!-- row -->
+
 <div class="row" markdown="1">
 <div class="col-sm-4" markdown="1">
 
@@ -33,18 +55,22 @@ We propose placing the human at the centre of these data flows, and providing
 mechanisms for citizens to interact with these systems explicitly.
 
 </div>
-</div>
+</div> <!-- row -->
 
 <div class="row" markdown="1">
-<div class="col-sm-4" markdown="1">
 <div class="text-center" markdown="1">
 
 ### [Blog](/blog/)
 
 </div>
+</div><!-- row -->
+
+<div class="row" markdown="1">
+<div class="col-sm-4" markdown="1">
+
 <ul class="list-unstyled">
 
-{% for post in site.posts limit: 3 %}
+{% for post in site.posts limit: 2 %}
         <li>
           <small class="text-muted">
             {{ post.date | date_to_long_string }}
@@ -60,15 +86,9 @@ mechanisms for citizens to interact with these systems explicitly.
 </div>
 
 <div class="col-sm-4" markdown="1">
-<div class="text-center" markdown="1">
-
-### [People](/people/)
-
-<hr />
-</div>
 
 <ul class="list-unstyled">
-{% for post in site.posts limit: 2 offset: 3 %}
+{% for post in site.posts limit: 2 offset: 2 %}
         <li>
           <small class="text-muted">
             {{ post.date | date_to_long_string }}
@@ -84,15 +104,9 @@ mechanisms for citizens to interact with these systems explicitly.
 </div>
 
 <div class="col-sm-4" markdown="1">
-<div class="text-center" markdown="1">
-
-### [Resources](/resources/)
-
-<hr />
-</div>
 
 <ul class="list-unstyled">
-{% for post in site.posts limit: 2 offset: 5 %}
+{% for post in site.posts limit: 2 offset: 4 %}
         <li>
           <small class="text-muted">
             {{ post.date | date_to_long_string }}
@@ -105,6 +119,6 @@ mechanisms for citizens to interact with these systems explicitly.
 {% endfor %}
 </ul>
 </div>
+</div> <!-- row -->
 
-</div>
-</div>
+</div><!-- container -->
