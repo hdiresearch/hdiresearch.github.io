@@ -8,6 +8,7 @@ description: Introducing the Human-Data Interaction Community
 
 # Who Are We?
 
+<div class="row">
 <div class="col-sm-3">
   <a href="http://mort.io/" class="thumbnail">
     <img src="/img/mort.jpg" alt="Richard Mortier" />
@@ -16,8 +17,7 @@ description: Introducing the Human-Data Interaction Community
 </div>
 
 <div class="col-sm-3">
-  <a href="http://www.eecs.qmul.ac.uk/~hamed/public/Hamed.html"
-     class="thumbnail">
+  <a href="http://www.eecs.qmul.ac.uk/~hamed/" class="thumbnail">
     <img src="/img/hamed.jpg" alt="Hamed Haddadi" />
     Dr Hamed Haddadi
   </a>
@@ -37,7 +37,9 @@ description: Introducing the Human-Data Interaction Community
     Dr Elizabeth Churchill
   </a>
 </div>
+</div><!-- row -->
 
+<div class="row">
 <div class="col-sm-3">
   <a href="http://www.eecs.qmul.ac.uk/~ph/" class="thumbnail">
     <img src="/img/pathealey.jpg" alt="Pat Healey" />
@@ -67,11 +69,25 @@ description: Introducing the Human-Data Interaction Community
     Nora Ní Loideaín
   </a>
 </div>
+</div><!-- row -->
+
+<div class="row">
 
 <div class="col-sm-3">
   <a href="https://amraii.wordpress.com/"
      class="thumbnail">
-    <img src="/img/nora.jpg" alt="Saman Amirpour Amraii" />
+    <img src="/img/saman.jpg" alt="Saman Amirpour Amraii" />
     Saman Amirpour Amraii
   </a>
 </div>
+
+<div class="col-sm-3">
+  <a href="http://anil.recoil.org"
+     class="thumbnail">
+    <img src="/img/avsm.jpg" alt="Anil Madhavapeddy" />
+    Anil Madhavapeddy
+  </a>
+
+</div>
+
+</div><!-- row -->

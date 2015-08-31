@@ -25,6 +25,7 @@ LESS = lessc -x --clean-css
 
 COFFEE = coffee
 JEKYLL = jekyll
+PORT ?= 4000
 
 COFFEES = $(notdir $(wildcard _coffee/*.coffee))
 JSS = $(patsubst %.coffee,js/%.js,$(COFFEES))
@@ -48,4 +49,4 @@ js/%.js: _coffee/%.coffee
 	$(COFFEE) -c -o js $<
 
 test: css js
-	$(JEKYLL) serve --watch --trace
+	$(JEKYLL) serve --port $(PORT) --watch --trace
