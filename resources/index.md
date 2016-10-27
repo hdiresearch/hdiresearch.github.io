@@ -12,6 +12,14 @@ A curated collection of HDI resources and links.
 
 The [HDI mailing list](http://jiscmail.ac.uk/HDI): open to all, for discussion, announcements and information pertaining to human-data interaction.
 
+[pdf](http://www.eecs.qmul.ac.uk/%7Ehamed/papers/Human-Data-Interaction.pdf)
+__Human-Data Interaction__<br
+/>
+_Richard Mortier, Hamed Haddadi, Tristan Henderson, Derek McAuley, Jon Crowcroft, Andy Crabtree_<br />
+[Encyclopedia of Human Computer Interaction, 2nd Ed]
+(https://www.interaction-design.org/literature/book/the-encyclopedia-of-human-computer-interaction-2nd-ed),<br />
+Oct 2016.
+
 [pdf](http://mor1.github.io/publications/pdf/ecscw15-hdi.pdf)
 __Human Data Interaction: Historical Lessons from Social Studies and CSCW__<br
 />
