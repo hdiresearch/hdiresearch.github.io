@@ -17,15 +17,20 @@
 
 .PHONY: site clean css js test
 
+help: # list targets
+	@egrep "^[^\w]+:" Makefile
+
+DOCKER = docker run -ti -v $$(pwd -P):/cwd -w /cwd
+JEKYLL = $(DOCKER) -p 80:80 mor1/alpine-jekyll
+COFFEE = $(DOCKER) mor1/alpine-coffeescript
+
 LESS = recess --compile \
 	--noOverqualifying false \
 	--strictPropertyOrder false \
 	--noUniversalSelectors false
 LESS = lessc -x --clean-css
 
-COFFEE = coffee
-JEKYLL = jekyll
-PORT ?= 4000
+PORT ?= 80
 
 COFFEES = $(notdir $(wildcard _coffee/*.coffee))
 JSS = $(patsubst %.coffee,js/%.js,$(COFFEES))
@@ -49,4 +54,4 @@ js/%.js: _coffee/%.coffee
 	$(COFFEE) -c -o js $<
 
 test: css js
-	$(JEKYLL) serve --port $(PORT) --watch --trace
+	$(JEKYLL) serve -H 0.0.0.0 -P $(PORT) --watch --trace --incremental
