@@ -21,10 +21,11 @@ layout: nil
       {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
     </title>
 
-    <!-- CSS IS THIS PICKED UP? -->
+    <!-- CSS -->
     {% assign csses = "bootstrap, page, " %}
     {% if page.csses %}
-    {% assign csses = csses | append: page.csses %}
+    {% assign page_csses = page.csses | join: ", " %}
+    {% assign csses = csses | append: page_csses %}
     {% endif %}
     {% assign csses = csses | split: ", " %}
 
