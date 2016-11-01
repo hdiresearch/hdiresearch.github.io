@@ -6,6 +6,8 @@ description: The HDI Blog
 title: Human-Data Interaction Blog
 ---
 
+# Blog
+
 <div class="col-lg-12">
 
 <ul class="list-unstyled">
