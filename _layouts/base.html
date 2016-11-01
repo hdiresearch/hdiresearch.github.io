@@ -21,10 +21,16 @@ layout: nil
       {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
     </title>
 
-    <!-- CSS -->
-    {% assign csses = "bootstrap, page" %}
+    <!-- CSS IS THIS PICKED UP? -->
+    {% unless page.csses %}
+      {% page.csses = "" | split: "" %}
+    {% endunless %}
+
+    {% assign base_csses = "bootstrap, page" %}
     {% assign page_csses = page.csses | join: ", " %}
-    {% assign csses = csses | append: ", " | append: page_csses | split: ", " %}
+    {% assign csses = base_csses | append: ", " | append: page_csses | split: ", " %}
+
+    <!-- {{ csses | inspect }} -->
     {% for css in csses %}
     <link href="/css/{{ css }}.css" rel="stylesheet" media="screen">
     {% endfor %}
