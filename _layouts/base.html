@@ -22,9 +22,13 @@ layout: nil
     </title>
 
     <!-- CSS -->
-    {% assign csses = "bootstrap, page" %}
+    {% assign csses = "bootstrap, page, " %}
+    {% if page.csses %}
     {% assign page_csses = page.csses | join: ", " %}
-    {% assign csses = csses | append: ", " | append: page_csses | split: ", " %}
+    {% assign csses = csses | append: page_csses %}
+    {% endif %}
+    {% assign csses = csses | split: ", " %}
+
     {% for css in csses %}
     <link href="/css/{{ css }}.css" rel="stylesheet" media="screen">
     {% endfor %}
