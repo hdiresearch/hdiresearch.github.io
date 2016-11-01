@@ -1,6 +1,10 @@
+---
+layout: nil
+---
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- META -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,30 +16,31 @@
           content="{% if page.author %}{{page.author}}{% else %}{{ site.author }}{% endif %}"
           />
 
+    <!-- TITLE -->
     <title>
       {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
     </title>
 
-    <!-- Bootstrap -->
-    <link href="/css/bootstrap.css" rel="stylesheet" media="screen">
-
-    {% for css in page.css %}
+    <!-- CSS -->
+    {% assign csses = "bootstrap, page" %}
+    {% assign page_csses = page.csses | join: ", " %}
+    {% assign csses = csses | append: ", " | append: page_csses | split: ", " %}
+    {% for css in csses %}
     <link href="/css/{{ css }}.css" rel="stylesheet" media="screen">
     {% endfor %}
 
     <link href='http://fonts.googleapis.com/css?family=Overlock+SC|Overlock:400,900,400italic,900italic' rel='stylesheet' type='text/css'>
 
-      <!-- font awesome -->
-      <link
-          href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
-          rel="stylesheet">
+    <!-- font awesome -->
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet">
 
-      <!-- RSS -->
-      <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml"
-            title="Atom feed">
-      <link rel="alternate" type="application/rss+xml" href="/blog/rss.xml"
-            title="RSS feed">
-
+    <!-- RSS -->
+    <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml"
+      title="Atom feed">
+    <link rel="alternate" type="application/rss+xml" href="/blog/rss.xml"
+      title="RSS feed">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media
          queries -->
