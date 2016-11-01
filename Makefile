@@ -17,41 +17,38 @@
 
 .PHONY: site clean css js test
 
+PORT ?= 80
+
 help: # list targets
 	@egrep "^[^\w]+:" Makefile
 
 DOCKER = docker run -ti -v $$(pwd -P):/cwd -w /cwd
-JEKYLL = $(DOCKER) -p 80:80 mor1/alpine-jekyll
+JEKYLL = $(DOCKER) mor1/alpine-jekyll
+JEKYLLS= $(DOCKER) -p $(PORT):$(PORT) mor1/alpine-jekyll
 COFFEE = $(DOCKER) mor1/alpine-coffeescript
-
-LESS = recess --compile \
-	--noOverqualifying false \
-	--strictPropertyOrder false \
-	--noUniversalSelectors false
-LESS = lessc -x --clean-css
-
-PORT ?= 80
+LESSC  = $(DOCKER) mor1/alpine-lessc \
+  --clean-css="--s1 --advanced --compatibility=ie8"
 
 COFFEES = $(notdir $(wildcard _coffee/*.coffee))
 JSS = $(patsubst %.coffee,js/%.js,$(COFFEES))
 
-LESSS = $(wildcard _less/*.less)
-CSSS = $(patsubst _less/%.less,css/%.css,$(LESSS))
+LESSES = $(filter-out _less/variables.less,$(wildcard _less/*.less))
+CSSES  = $(patsubst _less/%.less,css/%.css,$(LESSES))
 
-site: css js
+site: css js # build the site
 	$(JEKYLL) build --trace
 
-clean:
+clean: # remove all generated outputs
 	$(RM) -r _site
-	$(RM) $(JSS) $(wildcard _coffee/*.js) $(CSSS)
+	$(RM) $(JSS) $(wildcard _coffee/*.js) $(CSSES)
 
-css: $(CSSS)
+css: $(CSSES) # build the site's CSS
 css/%.css: _less/%.less
-	$(LESS) $< >| $@
+	$(LESSC) $< >| $@
 
-js: $(JSS)
+js: $(JSS) # build the site's JS
 js/%.js: _coffee/%.coffee
 	$(COFFEE) -c -o js $<
 
-test: css js
-	$(JEKYLL) serve -H 0.0.0.0 -P $(PORT) --watch --trace --incremental
+test: css js # run the site at http://localhost
+	$(JEKYLLS) serve -H 0.0.0.0 -P $(PORT) --watch --trace --incremental
