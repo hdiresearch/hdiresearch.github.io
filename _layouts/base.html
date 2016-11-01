@@ -22,15 +22,12 @@ layout: nil
     </title>
 
     <!-- CSS IS THIS PICKED UP? -->
-    {% unless page.csses %}
-      {% page.csses = "" | split: "" %}
-    {% endunless %}
+    {% assign csses = "bootstrap, page, " %}
+    {% if page.csses %}
+    {% assign csses = csses | append: page.csses %}
+    {% endif %}
+    {% assign csses = csses | split: ", " %}
 
-    {% assign base_csses = "bootstrap, page" %}
-    {% assign page_csses = page.csses | join: ", " %}
-    {% assign csses = base_csses | append: ", " | append: page_csses | split: ", " %}
-
-    <!-- {{ csses | inspect }} -->
     {% for css in csses %}
     <link href="/css/{{ css }}.css" rel="stylesheet" media="screen">
     {% endfor %}
