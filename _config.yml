@@ -1,6 +1,6 @@
 # site configuration
 
-exclude: [Gemfile, Gemfile.lock, README.md, LICENSE]
+exclude: [Gemfile, Gemfile.lock, README.md, LICENSE, Makefile, README.md]
 permalink: pretty
 markdown: kramdown
 
