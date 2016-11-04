@@ -15,40 +15,34 @@
 # Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307,
 # USA.
 
-.PHONY: site clean css js test
+.PHONY: site clean css test
 
-PORT ?= 80
+PORT ?= 8080
 
 help: # list targets
-	@egrep "^[^\w]+:" Makefile
+	@egrep "^\S+:" Makefile \
+	  | grep -v "^.PHONY" \
+	  | awk -F"\s*#\s*" '{ if (length($2) != 0) printf("%s\n--%s\n", $$1, $$2) }'
 
 DOCKER = docker run -ti -v $$(pwd -P):/cwd -w /cwd
-JEKYLL = $(DOCKER) mor1/alpine-jekyll
-JEKYLLS= $(DOCKER) -p $(PORT):$(PORT) mor1/alpine-jekyll
-COFFEE = $(DOCKER) mor1/alpine-coffeescript
+JEKYLL = $(DOCKER) mor1/jekyll
+JEKYLLS= $(DOCKER) -p $(PORT):$(PORT) mor1/jekyll
 LESSC  = $(DOCKER) mor1/alpine-lessc \
   --clean-css="--s1 --advanced --compatibility=ie8"
-
-COFFEES = $(notdir $(wildcard _coffee/*.coffee))
-JSS = $(patsubst %.coffee,js/%.js,$(COFFEES))
 
 LESSES = $(filter-out _less/variables.less,$(wildcard _less/*.less))
 CSSES  = $(patsubst _less/%.less,css/%.css,$(LESSES))
 
-site: css js # build the site
+site: css # build the site
 	$(JEKYLL) build --trace
 
 clean: # remove all generated outputs
 	$(RM) -r _site
-	$(RM) $(JSS) $(wildcard _coffee/*.js) $(CSSES)
+	$(RM) $(CSSES)
 
 css: $(CSSES) # build the site's CSS
 css/%.css: _less/%.less
 	$(LESSC) $< >| $@
-
-js: $(JSS) # build the site's JS
-js/%.js: _coffee/%.coffee
-	$(COFFEE) -c -o js $<
 
 test: css js # run the site at http://localhost
 	$(JEKYLLS) serve -H 0.0.0.0 -P $(PORT) --watch --trace --incremental

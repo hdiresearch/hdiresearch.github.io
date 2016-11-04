@@ -2,11 +2,11 @@
 
 exclude: [Gemfile, Gemfile.lock, README.md, LICENSE, Makefile, README.md]
 permalink: pretty
-markdown: kramdown
+
+repository: hdiresearch/hdiresearch.github.io
 
 author: Richard Mortier
 settings:
-  github: hdiresearch/hdiresearch.github.io
   analytics:
     id: UA-45397197-1
     name: hdiresearch.org
