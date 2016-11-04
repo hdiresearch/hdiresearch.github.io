@@ -21,21 +21,16 @@ layout: nil
       {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
     </title>
 
-    <!-- CSS -->
     {% assign csses = "bootstrap, page, " %}
-    {% if page.csses %}
-    {% assign page_csses = page.csses | join: ", " %}
-    {% assign csses = csses | append: page_csses %}
-    <!-- 1. {{ csses | inspect }} -->
+    {% if layout.csses %}
+      {% assign page_csses = layout.csses | join: ", " %}
+      {% assign csses = csses | append: page_csses %}
     {% endif %}
-    <!-- 2. {{ csses | inspect }} -->
     {% assign csses = csses | split: ", " %}
-    <!-- 3. {{ csses | inspect }} -->
 
     {% for css in csses %}
     <link href="/css/{{ css }}.css" rel="stylesheet" media="screen">
     {% endfor %}
-    <!-- 4. {{ csses | inspect }} -->
 
     <link href='http://fonts.googleapis.com/css?family=Overlock+SC|Overlock:400,900,400italic,900italic' rel='stylesheet' type='text/css'>
 
