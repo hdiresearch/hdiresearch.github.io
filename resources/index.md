@@ -12,7 +12,7 @@ A curated collection of HDI resources and links.
 
 The [HDI mailing list](http://jiscmail.ac.uk/HDI): open to all, for discussion, announcements and information pertaining to human-data interaction.
 
-[pdf](http://www.eecs.qmul.ac.uk/%7Ehamed/papers/Human-Data-Interaction.pdf)
+[pdf](https://haddadi.github.io/papers/Human-Data-Interaction.pdf)
 __Human-Data Interaction__<br
 />
 _Richard Mortier, Hamed Haddadi, Tristan Henderson, Derek McAuley, Jon Crowcroft, Andy Crabtree_<br />
